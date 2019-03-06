@@ -186,7 +186,7 @@ module.exports.run = function (buildOpts) {
             };
 
             var bundleIdentifier = projectFile.parse(locations).getPackageName();
-            var exportOptions = {'compileBitcode': false, 'method': 'development'};
+            var exportOptions = {'compileBitcode': false, 'method': 'development', 'generateAppStoreInformation': true};
 
             if (buildOpts.packageType) {
                 exportOptions.method = buildOpts.packageType;
