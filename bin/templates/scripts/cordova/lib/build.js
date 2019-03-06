@@ -176,10 +176,6 @@ module.exports.run = function (buildOpts) {
                 });
 
         }).then(function () {
-            if (!buildOpts.device || buildOpts.noSign) {
-                return;
-            }
-
             var locations = {
                 root: projectPath,
                 pbxproj: path.join(projectPath, projectName + '.xcodeproj', 'project.pbxproj')
